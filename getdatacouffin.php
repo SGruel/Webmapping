@@ -11,7 +11,9 @@ if(!result){
   echo "Erreur de requete";
   exit;
 };
-$array=pg_fetch_all($result) 
+$array=pg_fetch_all($result);
+$ajax=json_encode($result)
+echo $ajax
 
 
 
