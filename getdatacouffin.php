@@ -1,12 +1,10 @@
-  
 <?php
 $dbconn = pg_connect("host=localhost port=5432 dbname=dbCouffin  user=postgres password=postgres");
 if (!$dbconn){
   echo "Erreur de connection\n";
   exit;
 };
-$query= "SELECT * FROM cuffin ORDER BY date";
-$resut= pg_query($dbcnn,$query);
+$query= "SELECT * FROM couffin ORDER BY date";
 if(!$result){
   echo "Erreur de requete";
   exit;
